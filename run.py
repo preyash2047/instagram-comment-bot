@@ -13,7 +13,6 @@ from selenium.webdriver.common.keys import Keys
 from selenium.common.exceptions import NoSuchElementException
 from credentials import username as usr, password as passw
 
-
 class Bot:
     def __init__(self, username, password):
         self.username = username
@@ -74,7 +73,7 @@ class Bot:
 
         time.sleep(4)
 
-        for i in range(4):
+        for i in range(40):
             ActionChains(bot).send_keys(Keys.END).perform()
             time.sleep(2)
 
